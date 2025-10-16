@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Live Currency Converter</title>
+  <link rel="stylesheet" href="cur_con_css.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="converter-card">
+      <h2>Live Currency Converter</h2>
+
+      <div class="input-group">
+        <input type="number" id="amount" placeholder="Enter amount" />
+      </div>
+
+      <div class="dropdowns">
+        <select id="fromCurrency"></select>
+        <span>→</span>
+        <select id="toCurrency"></select>
+      </div>
+
+      <button onclick="convertCurrency()">Convert</button>
+
+      <div id="result" class="result">Result: --</div>
+    </div>
+  </div>
+
+  <script src="cur_con_js.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #2f279b, #375bc0);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  perspective: 1000px;
+}
+
+.converter-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px 40px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  text-align: center;
+  transition: transform 0.1s ease-out, box-shadow 0.2s ease;
+  will-change: transform, box-shadow;
+  transform-style: preserve-3d;
+}
+
+.converter-card h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #2a5298;
+}
+
+.dropdowns {
+  display: inline-flex;   
+  align-items: center;
+  gap: 10px;            
+  margin: 20px 0;
+}
+
+select {
+  width: 140px;          
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s;
+  flex: none;            
+}
+
+
+
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  flex: 1;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+select:focus {
+  border-color: #2a5298;
+}
+
+.dropdowns span {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #444;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #2a5298;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #c03d00;
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #2a5298;
+  font-weight: bold;
+}
